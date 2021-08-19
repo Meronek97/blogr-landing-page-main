@@ -1,21 +1,7 @@
-var dropdown = document.getElementsByClassName("dropbtn");
-var i;
-const navLinks = document.querySelectorAll('.nav__link')
+$('.sub-menu ul').hide();
+$(".sub-menu a").click(function() {
+    $(this).parent(".sub-menu").children("ul").slideToggle("100");
+    $(this).find(".right").toggleClass("arrow--down arrow--up");
 
-for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    });
-}
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
-})
+});

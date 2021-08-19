@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <style>
         .attribution {
             font-size: 11px;
@@ -36,46 +38,40 @@
         <button class="nav__toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
-        <nav class="nav">
+
+        <nav class="animated bounceInDown nav">
             <ul class="nav__list">
-                <li class="nav__item">
-                    <div class="dropdown">
-                        <button class="dropbtn">Product <img src="images/icon-arrow-dark.svg" alt=""></button>
-                        <div class="dropdown-content">
-                            <a href="#" class="nav__link">Overview</a>
-                            <a href="#" class="nav__link">Pricing</a>
-                            <a href="#" class="nav__link">Marketplace</a>
-                            <a href="#" class="nav__link">Features</a>
-                            <a href="#" class="nav__link">Integrations</a>
-                        </div>
-                    </div>
+
+                <li class="sub-menu"><a href='#' class="nav__item">Product<div class="fas fa-chevron-down fa-xs right "></div></a>
+                    <ul class="sub-menu__content">
+                        <li class="nav__link"><a href="#">Overview</a></li>
+                        <li class="nav__link"><a href="#">Pricing</a></li>
+                        <li class="nav__link"><a href="#">Marketplace</a></li>
+                        <li class="nav__link"><a href="#">Features</a></li>
+                        <li class="nav__link"><a href="#">Integrations</a></li>
+                    </ul>
                 </li>
-                <li class="nav__item">
-                    <div class="dropdown">
-                        <button class="dropbtn">Company <img src="images/icon-arrow-dark.svg" alt=""></button>
-                        <div class="dropdown-content">
-                            <a href="#" class="nav__link">About</a>
-                            <a href="#" class="nav__link">Team</a>
-                            <a href="#" class="nav__link">Blog</a>
-                            <a href="#" class="nav__link">Careers</a>
-                        </div>
-                    </div>
+                <li class="sub-menu"><a href='#' class="nav__item">Company<div class="fas fa-chevron-down fa-xs right "></div></a>
+                    <ul class="sub-menu__content">
+                        <li class="nav__link"><a href="#">About</a></li>
+                        <li class="nav__link"><a href="#">Team</a></li>
+                        <li class="nav__link"><a href="#">Blog</a></li>
+                        <li class="nav__link"><a href="#">Careers</a></li>
+                    </ul>
                 </li>
-                <li class="nav__item">
-                    <div class="dropdown">
-                        <button class="dropbtn">Connect <img src="images/icon-arrow-dark.svg" alt=""></button>
-                        <div class="dropdown-content">
-                            <a href="#" class="nav__link">Contact</a>
-                            <a href="#" class="nav__link">Newsletter</a>
-                            <a href="#" class="nav__link">LinkedIn</a>
-                        </div>
-                    </div>
+                <li class="sub-menu"><a href='#' class="nav__item">Connect<div class="fas fa-chevron-down fa-xs right"></div></a>
+                    <ul class="sub-menu__content">
+                        <li class="nav__link"><a href="#">Contact</a></li>
+                        <li class="nav__link"><a href="#">Newsletter</a></li>
+                        <li class="nav__link"><a href="#">LinkedIn</a></li>
+                    </ul>
                 </li>
                 <div class="buttons">
                     <div class="btn__margin--bottom"><a href="#" class="btn btn__login">Login</a></div>
                     <div class="btn btn__signup"><a href="#">Sign Up</a></div>
                 </div>
             </ul>
+
 
         </nav>
 
@@ -158,9 +154,11 @@
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Konrad</a>.
         </div>
     </section>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="js/index.js"></script>
     <script src="js/dropdownmenu.js"></script>
+
+
 </body>
 
 
