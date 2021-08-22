@@ -366,7 +366,7 @@ a.nav__item {
 section {
     text-align: center;
     margin: 2em auto 0;
-    padding: 1em 0;
+    padding: 1em 1em;
     line-height: 2;
 }
 
@@ -420,10 +420,11 @@ h4 {
 @media (min-width:55em) {
     /*  typography */
     h2 {
-        font-size: 2em;
+        font-size: 1.75em;
+        margin: 0;
     }
     header {
-        background-position: 10em -20em;
+        background-position: -5em -20em;
     }
     .logo {
         display: block;
@@ -519,7 +520,6 @@ h4 {
         width: min(100%, 75rem);
         grid-template-columns: 50% 50%;
         align-items: center;
-        gap: 5em;
     }
     .grid__column--3 {
         display: grid;
@@ -527,19 +527,23 @@ h4 {
         grid-template-columns: 33% 33% 33%;
         align-items: center;
     }
+    .section__body {
+        margin-bottom: 5em;
+    }
     /* images */
     .image__laptop {
         background-image: url(../images/illustration-laptop-desktop.svg);
-        min-width: 60em;
-        min-height: 60em;
-        background-position: -17em 0em;
+        min-width: 35em;
+        min-height: 35em;
+        background-size: cover;
+        background-position: -12em 0em;
     }
     .image__editor {
         background-image: url(../images/illustration-editor-desktop.svg);
-        min-width: 60em;
-        min-height: 60em;
+        min-width: 40em;
+        min-height: 40em;
         background-size: cover;
-        background-position: 3em 0em;
+        background-position: -2em 0em;
     }
     .image__phones {
         background-image: url(../images/illustration-phones.svg);
@@ -569,135 +573,27 @@ h4 {
     header {
         background-position: 10em -20em;
     }
-    .logo {
-        display: block;
-        float: left;
-    }
-    .nav__toggle {
-        display: none;
-    }
-    .nav {
-        position: static;
-        top: 0;
-        float: right;
-        transform: none;
-        transition: none;
-        margin-top: 0;
-        height: 0;
-        border-radius: 0.5em;
-    }
-    a.nav__item {
-        color: var(--clr-white);
-        font-size: 0.9em;
-    }
-    a.nav__item:hover,
-    a.nav__item:focus {
-        text-decoration: underline;
-        color: var(--clr-white)
-    }
-    .sub-menu {
-        display: block;
-        float: left;
-        margin: 0 2em;
-        padding: 2em 0;
-        min-width: 5em;
-    }
-    .sub-menu:first-of-type {
-        margin: 0 0 0 7em;
-        padding: 2em 0;
-    }
-    .sub-menu:last-of-type {
-        margin: 0;
-        padding: 2em 0;
-    }
-    .sub-menu__content {
-        min-width: 6em;
-        min-height: 10em;
-    }
-    .nav__link {
-        font-weight: var(--fw-reg);
-    }
-    .nav__link:hover,
-    .nav__link:focus {
-        color: black;
-        font-weight: var(--fw-bold);
-    }
-    .nav__buttons {
-        display: block;
-        float: right;
-        padding: 1.5em 2em 0 0;
-    }
-    .nav__btn {
-        display: block;
-        float: left;
-        font-size: 0.75em;
-    }
-    .btn__margin--bottom {
-        margin: 0;
-    }
-    .btn__login {
-        color: var(--clr-white);
-    }
-    .buttons {
-        margin: 0 auto;
-    }
-    .btn {
-        font-size: 1em;
-    }
-    .btn__signup {
-        background: var(--clr-white);
-        color: var(--clr-primary-200);
-        padding: 0.7em 2em;
-    }
-    .btn__signup:hover,
-    .btn__signup:focus {
-        background: var(--clr-primary-200);
-        color: var(--clr-white);
-    }
-    .nav__link {
-        font-size: 0.75em;
-    }
-    /* sections */
     .grid__column--2 {
-        display: grid;
-        width: min(100%, 75rem);
-        grid-template-columns: 50% 50%;
-        align-items: center;
         gap: 5em;
-    }
-    .grid__column--3 {
-        display: grid;
-        width: min(100%, 75rem);
-        grid-template-columns: 33% 33% 33%;
-        align-items: center;
     }
     /* images */
     .image__laptop {
         background-image: url(../images/illustration-laptop-desktop.svg);
         min-width: 60em;
         min-height: 60em;
-        background-position: -17em 0em;
+        background-position: -21.5em 0em;
     }
     .image__editor {
         background-image: url(../images/illustration-editor-desktop.svg);
         min-width: 60em;
         min-height: 60em;
         background-size: cover;
-        background-position: 3em 0em;
+        background-position: 2em 0em;
     }
     .image__phones {
         background-image: url(../images/illustration-phones.svg);
         min-width: 30em;
         min-height: 30em;
         top: -15%;
-    }
-    .order--1 {
-        order: 1;
-    }
-    .section__body--dark {
-        margin-top: 0;
-    }
-    .footer .logo {
-        margin: 1em 0 0 5em;
     }
 }
